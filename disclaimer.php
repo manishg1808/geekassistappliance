@@ -1,6 +1,7 @@
 <?php
 $page_title = "Disclaimer & Technical Scope | GeekAssist Appliance";
 $page_desc = "Disclaimer policy outlining the scope of 100% online remote technical support, diagnostic limitations, independent service provider status, and trademark disclaimers.";
+$page_keywords = "technical disclaimer, remote support scope, independent tech provider, trademark disclaimer, geekassist policy";
 include_once __DIR__ . '/includes/header.php';
 ?>
 

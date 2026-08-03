@@ -1,6 +1,7 @@
 <?php
 $page_title = "Refund & Cancellation Policy | GeekAssist Appliance";
 $page_desc = "Refund and Cancellation Policy governing GeekAssist Appliance 100% online remote technical sessions, diagnostic evaluations, and 90-day resolution guarantee.";
+$page_keywords = "refund policy, cancellation policy, 90 day guarantee, remote tech session refund, geekassist refund policy";
 include_once __DIR__ . '/includes/header.php';
 ?>
 

@@ -1,6 +1,7 @@
 <?php
-$page_title = "Privacy Policy";
+$page_title = "Privacy Policy | GeekAssist Appliance";
 $page_desc = "GeekAssist Appliance privacy policy regarding client data protection, service scheduling information, and customer security.";
+$page_keywords = "privacy policy, data privacy, client data security, geekassist privacy";
 include_once __DIR__ . '/includes/header.php';
 ?>
 

@@ -1,6 +1,7 @@
 <?php
 $page_title = "Cookie Policy | GeekAssist Appliance";
 $page_desc = "Learn how GeekAssist Appliance uses essential cookies, performance preferences, and secure session management to deliver seamless 100% online remote technical support.";
+$page_keywords = "cookie policy, website cookies, session security, data protection, geekassist cookie policy";
 include_once __DIR__ . '/includes/header.php';
 ?>
 

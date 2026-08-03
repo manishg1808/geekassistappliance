@@ -1,6 +1,7 @@
 <?php
 $page_title = "Privacy Policy | GeekAssist Appliance";
 $page_desc = "GeekAssist Appliance Privacy Policy detailing how we collect, safeguard, and process personal data and remote support diagnostic logs under 256-bit encryption.";
+$page_keywords = "privacy policy, data privacy, encrypted remote session, user data protection, geekassist privacy";
 include_once __DIR__ . '/includes/header.php';
 ?>
 

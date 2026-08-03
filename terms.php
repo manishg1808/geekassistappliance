@@ -1,6 +1,7 @@
 <?php
 $page_title = "Terms & Conditions | GeekAssist Appliance";
 $page_desc = "Terms & Conditions governing the use of GeekAssist Appliance 100% online remote technical services, virtual diagnostic sessions, and resolution guarantees.";
+$page_keywords = "terms and conditions, remote tech service agreement, geekassist terms, online diagnostic session terms";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
