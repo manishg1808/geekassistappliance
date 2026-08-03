@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="100%" height="100%">
+  <!-- Clean Minimalist Emblem -->
+  <g transform="translate(5, 10)">
+    <rect x="0" y="0" width="80" height="80" rx="18" fill="#2563eb" />
+    <path d="M40 22 C29 22 21 30 21 41 C21 52 29 60 40 60 C51 60 59 52 59 41 C59 30 51 22 40 22 Z" fill="none" stroke="#ffffff" stroke-width="4.5"/>
+    <path d="M33 41 L38 46 L48 34" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="60" cy="20" r="6" fill="#f97316"/>
+  </g>
+
+  <!-- Clean Modern Typography -->
+  <g transform="translate(102, 54)">
+    <text font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="38" fill="#0f172a" letter-spacing="-0.5">Geek<tspan fill="#2563eb">Assist</tspan></text>
+    <text x="2" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#64748b" letter-spacing="3.5">APPLIANCE</text>
+  </g>
+</svg>
