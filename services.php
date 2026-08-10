@@ -1,7 +1,7 @@
 <?php
-$page_title = "Complete 100% Online Remote Services Catalog (17 Categories)";
-$page_desc = "Browse our full range of 100% online remote appliance diagnostic, virtual kitchen equipment assistance, laundry troubleshooting, commercial unit diagnostics, and printer tech setup services.";
-$page_keywords = "100% online remote tech services, virtual appliance diagnostics catalog, online printer setup, remote computer help, commercial equipment virtual support";
+$page_title = "Comprehensive Online Services Catalog (17 Categories)";
+$page_desc = "Browse our full range of certified online appliance diagnostic, virtual kitchen equipment assistance, laundry troubleshooting, commercial unit diagnostics, and printer tech setup services.";
+$page_keywords = "certified online tech services, virtual appliance diagnostics catalog, online printer setup, online computer help, commercial equipment virtual support";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -9,13 +9,13 @@ include_once __DIR__ . '/includes/header.php';
 <section style="padding: 4rem 0 3rem; background: radial-gradient(circle at 50% 0%, #eff6ff 0%, #f8fafc 100%); border-bottom: 1px solid var(--border-light);">
     <div class="container" style="text-align: center; max-width: 800px;">
         <div class="hero-badge" style="margin-bottom: 1rem;">
-            <i class="ri-global-line"></i> Full Catalog - 17 100% Online Remote Solutions
+            <i class="ri-global-line"></i> Full Catalog - 17 Certified Online Technical Solutions
         </div>
         <h1 style="font-size: 3rem; margin-bottom: 1rem;" class="text-gradient">
-            100% Online Remote Services Catalog
+            Certified Online Services Catalog
         </h1>
         <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">
-            Find instant 100% online remote diagnostic help for all home appliances, commercial gear, printer networks, and office IT equipment.
+            Find instant virtual diagnostic help for all home appliances, commercial gear, printer networks, and office IT equipment.
         </p>
 
         <!-- Live Instant Search Bar -->

@@ -1,7 +1,7 @@
 <?php
-$page_title = "Start 100% Online Remote Session | Instant Tech & Appliance Support";
-$page_desc = "Connect with a certified tech specialist for 100% online remote appliance diagnostic, printer setup, or computer troubleshooting. Instant online connection.";
-$page_keywords = "start remote session, book online tech help, virtual appliance diagnostic appointment, fast remote desktop connection, printer setup online session";
+$page_title = "Start Certified Online Session | Instant Tech & Appliance Support";
+$page_desc = "Connect with a certified tech specialist for online appliance diagnostic, printer setup, or computer troubleshooting. Instant online connection.";
+$page_keywords = "start online session, book online tech help, virtual appliance diagnostic appointment, fast online connection, printer setup online session";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -9,13 +9,13 @@ include_once __DIR__ . '/includes/header.php';
 <section style="padding: 4rem 0 3rem; background: radial-gradient(circle at 50% 0%, #eff6ff 0%, #f8fafc 100%); border-bottom: 1px solid var(--border-light);">
     <div class="container" style="text-align: center; max-width: 800px;">
         <div class="hero-badge" style="margin-bottom: 1rem;">
-            <i class="ri-global-line"></i> 100% Online Remote Connection
+            <i class="ri-global-line"></i> Certified Online Technical Connection
         </div>
         <h1 style="font-size: 3rem; margin-bottom: 1rem;" class="text-gradient">
-            Start Your 100% Online Remote Session
+            Start Your Certified Online Session
         </h1>
         <p style="color: var(--text-muted); font-size: 1.1rem;">
-            Select your service requirement, pick your time slot, and connect with our remote specialist online in minutes. No in-person visit required!
+            Select your service requirement, pick your time slot, and connect with our technical specialist online in minutes. No in-person visit required!
         </p>
     </div>
 </section>
@@ -28,7 +28,7 @@ include_once __DIR__ . '/includes/header.php';
             <div style="display: flex; justify-content: space-around; margin-bottom: 2.5rem; border-bottom: 1px solid var(--border-light); padding-bottom: 1.5rem; text-align: center;">
                 <div>
                     <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 0.35rem;">1</div>
-                    <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Remote Service</div>
+                    <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Online Service</div>
                 </div>
                 <div>
                     <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--accent); color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 0.35rem;">2</div>
@@ -45,8 +45,8 @@ include_once __DIR__ . '/includes/header.php';
                 
                 <div class="form-group">
                     <label class="form-label">Service Type *</label>
-                    <select class="form-control" required>
-                        <option value="">-- Choose from 17 100% Online Services --</option>
+                    <select name="service_type" class="form-control" required>
+                        <option value="">-- Choose from 17 Certified Online Services --</option>
                         <?php foreach ($services as $slug => $srv): ?>
                             <option value="<?php echo $slug; ?>"><?php echo $srv['title']; ?></option>
                         <?php endforeach; ?>
@@ -57,11 +57,11 @@ include_once __DIR__ . '/includes/header.php';
                 <div class="grid grid-cols-2" style="gap: 1rem;">
                     <div class="form-group">
                         <label class="form-label">Appliance Brand / Make</label>
-                        <input type="text" class="form-control" placeholder="e.g. Samsung, LG, HP, Bosch">
+                        <input type="text" name="brand" class="form-control" placeholder="e.g. Samsung, LG, HP, Bosch">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Estimated Age of Unit</label>
-                        <select class="form-control">
+                        <select name="unit_age" class="form-control">
                             <option value="Under 2 years">Under 2 years</option>
                             <option value="2 to 5 years">2 to 5 years</option>
                             <option value="5+ years">5+ years</option>
@@ -75,11 +75,11 @@ include_once __DIR__ . '/includes/header.php';
                 <div class="grid grid-cols-2" style="gap: 1rem;">
                     <div class="form-group">
                         <label class="form-label">Preferred Service Date *</label>
-                        <input type="date" class="form-control" min="<?php echo date('Y-m-d'); ?>" required>
+                        <input type="date" name="date" class="form-control" min="<?php echo date('Y-m-d'); ?>" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label">Time Window *</label>
-                        <select class="form-control" required>
+                        <select name="time_window" class="form-control" required>
                             <option value="Morning (8:00 AM - 12:00 PM)">Morning (8:00 AM - 12:00 PM)</option>
                             <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
                             <option value="Evening (4:00 PM - 6:00 PM)">Evening (4:00 PM - 6:00 PM)</option>
@@ -92,33 +92,33 @@ include_once __DIR__ . '/includes/header.php';
                 <div class="grid grid-cols-2" style="gap: 1rem;">
                     <div class="form-group">
                         <label class="form-label">Full Name *</label>
-                        <input type="text" class="form-control" placeholder="John Doe" required>
+                        <input type="text" name="full_name" class="form-control" placeholder="John Doe" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label">Phone Number *</label>
-                        <input type="tel" class="form-control" placeholder="(808) 555-0199" required>
+                        <input type="tel" name="phone" class="form-control" placeholder="(808) 555-0199" required>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-2" style="gap: 1rem;">
                     <div class="form-group">
                         <label class="form-label">Email Address *</label>
-                        <input type="email" class="form-control" placeholder="john@example.com" required>
+                        <input type="email" name="email" class="form-control" placeholder="john@example.com" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label">City / Community *</label>
-                        <input type="text" class="form-control" value="Kamloops, BC" required>
+                        <input type="text" name="city" class="form-control" value="Kamloops, BC" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Full Service Address (Street & Unit Number) *</label>
-                    <input type="text" class="form-control" placeholder="123 Main St, Apartment 4B" required>
+                    <input type="text" name="address" class="form-control" placeholder="123 Main St, Apartment 4B" required>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Detailed Notes / Symptoms</label>
-                    <textarea class="form-control" rows="3" placeholder="Tell our technician what is happening (e.g. noise, leak, error code)..."></textarea>
+                    <textarea name="notes" class="form-control" rows="3" placeholder="Tell our technician what is happening (e.g. noise, leak, error code)..."></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-accent" style="width: 100%; padding: 1rem; font-size: 1.1rem; margin-top: 1rem;">

@@ -401,6 +401,10 @@ img {
   .mobile-menu-toggle { display: block; }
 }
 
+#mobile-nav-drawer.active {
+  right: 0 !important;
+}
+
 /* Hero Section */
 .hero-section {
   padding: 5rem 0 4rem;

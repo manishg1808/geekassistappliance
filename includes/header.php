@@ -75,7 +75,7 @@ $canonical_url = $request_scheme . '://' . $host . $uri;
         "telephone": "<?php echo PHONE_NUMBER; ?>",
         "email": "<?php echo EMAIL_ADDRESS; ?>",
         "priceRange": "$$",
-        "areaServed": "Worldwide & Nationwide 100% Online Remote",
+        "areaServed": "Worldwide & Nationwide Certified Online",
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
@@ -116,7 +116,7 @@ $canonical_url = $request_scheme . '://' . $host . $uri;
                         <div class="mega-dropdown">
                             <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 0.75rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-light);">
                                 <span style="font-size: 0.8rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em;">
-                                    <i class="ri-layout-grid-fill"></i> All 100% Online Remote Services (17)
+                                    <i class="ri-layout-grid-fill"></i> All Certified Online Technical Services (17)
                                 </span>
                                 <a href="<?php echo SITE_URL; ?>/services.php" style="font-size: 0.8rem; font-weight: 700; color: var(--accent);">
                                     View Catalog →
@@ -160,7 +160,7 @@ $canonical_url = $request_scheme . '://' . $host . $uri;
             <!-- Header Action CTA -->
             <div style="display: flex; align-items: center; gap: 1rem;">
                 <a href="<?php echo SITE_URL; ?>/booking.php" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.875rem;">
-                    <i class="ri-remote-control-line"></i> Fix 100% Online Now
+                    <i class="ri-headset-line"></i> Fix Online Now
                 </a>
                 
                 <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open mobile navigation">

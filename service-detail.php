@@ -10,9 +10,9 @@ if (!$srv) {
     exit;
 }
 
-$page_title = "100% Online " . $srv['title'] . " & Remote Diagnostics";
-$page_desc = "Instant 100% online remote support and diagnostic evaluation for " . strtolower($srv['title']) . ". Connect with certified remote technicians online in under 15 minutes. Zero home visit needed.";
-$page_keywords = strtolower($srv['title']) . " online support, remote " . strtolower($srv['title']) . " diagnostics, virtual " . strtolower($srv['category']) . " repair, 100% online tech help";
+$page_title = "Certified Online " . $srv['title'] . " & Virtual Diagnostics";
+$page_desc = "Instant certified online technical support and diagnostic evaluation for " . strtolower($srv['title']) . ". Connect with certified technical specialists online in under 15 minutes. Zero home visit needed.";
+$page_keywords = strtolower($srv['title']) . " online support, virtual " . strtolower($srv['title']) . " diagnostics, virtual " . strtolower($srv['category']) . " repair, certified online tech help";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -33,7 +33,7 @@ include_once __DIR__ . '/includes/header.php';
                         <i class="<?php echo $srv['icon']; ?>"></i> <?php echo $srv['category']; ?> Category
                     </span>
                     <span class="status-badge" style="background: rgba(16, 185, 129, 0.15); color: var(--success); border-color: rgba(16, 185, 129, 0.3);">
-                        <span class="pulse-dot"></span> 100% Online Remote Session Available
+                        <span class="pulse-dot"></span> Certified Online Virtual Session Available
                     </span>
                 </div>
 
@@ -48,10 +48,10 @@ include_once __DIR__ . '/includes/header.php';
                 <!-- Feature Highlights Bullets -->
                 <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 2rem;">
                     <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 600; color: var(--text-main);">
-                        <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> 100% Online & Remote — No In-Person Home Visit Required
+                        <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> Fully Online & Virtual — No In-Person Home Visit Required
                     </div>
                     <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 600; color: var(--text-main);">
-                        <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> Instant Remote Screen Share / Video Guided Diagnostics
+                        <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> Instant Online Screen Share / Video Guided Diagnostics
                     </div>
                     <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 600; color: var(--text-main);">
                         <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> Backed by a 90-Day Written Satisfaction Guarantee
@@ -60,10 +60,10 @@ include_once __DIR__ . '/includes/header.php';
 
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <button class="btn btn-accent open-booking-modal" data-service="<?php echo $slug; ?>">
-                        <i class="ri-remote-control-line"></i> Start 100% Online Session
+                        <i class="ri-global-line"></i> Start Online Virtual Session
                     </button>
                     <a href="tel:<?php echo PHONE_RAW; ?>" class="btn btn-outline">
-                        <i class="ri-phone-line"></i> Call Remote Tech: <?php echo PHONE_NUMBER; ?>
+                        <i class="ri-phone-line"></i> Call Tech Hotline: <?php echo PHONE_NUMBER; ?>
                     </a>
                 </div>
             </div>
@@ -71,7 +71,7 @@ include_once __DIR__ . '/includes/header.php';
             <!-- Pricing & Overview Card -->
             <div class="glass-card" style="background: #ffffff; padding: 2.5rem; box-shadow: var(--shadow-card);">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-light); padding-bottom: 0.85rem;">
-                    <h3 style="font-size: 1.25rem;">Online Remote Overview</h3>
+                    <h3 style="font-size: 1.25rem;">Online Virtual Overview</h3>
                     <span style="font-size: 0.775rem; background: var(--accent-subtle); color: var(--accent); padding: 0.25rem 0.65rem; border-radius: 99px; font-weight: 700;">No Travel Fee</span>
                 </div>
 
@@ -84,15 +84,15 @@ include_once __DIR__ . '/includes/header.php';
 
                 <div style="background: var(--bg-light); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 1.75rem; font-size: 0.875rem; color: var(--text-muted);">
                     <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
-                        <i class="ri-shield-check-line" style="color: var(--primary);"></i> Included In Every Remote Session:
+                        <i class="ri-shield-check-line" style="color: var(--primary);"></i> Included In Every Online Session:
                     </div>
                     • Free initial 5-minute online diagnostic assessment<br>
                     • Step-by-step guided screen-share or video walkthrough<br>
-                    • Full 90-day remote support satisfaction guarantee
+                    • Full 90-day online support satisfaction guarantee
                 </div>
 
                 <button class="btn btn-primary open-booking-modal" data-service="<?php echo $slug; ?>" style="width: 100%; justify-content: center;">
-                    Connect With Remote Specialist Now <i class="ri-arrow-right-line"></i>
+                    Connect With Technical Specialist Now <i class="ri-arrow-right-line"></i>
                 </button>
             </div>
         </div>
@@ -108,7 +108,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-global-line"></i>
                 </div>
                 <div>
-                    <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">100% Online Remote</h4>
+                    <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">Fully Online Virtual</h4>
                     <p style="font-size: 0.8rem; color: var(--text-muted);">No in-person visit required</p>
                 </div>
             </div>
@@ -129,7 +129,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <div>
                     <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">Encrypted & Secure</h4>
-                    <p style="font-size: 0.8rem; color: var(--text-muted);">Protected remote sessions</p>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Protected online sessions</p>
                 </div>
             </div>
 
@@ -158,7 +158,7 @@ include_once __DIR__ . '/includes/header.php';
                     Common Issues We Resolve Online
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.6;">
-                    If you are experiencing any of the following problems with your <?php echo strtolower($srv['title']); ?>, our remote specialists will connect with you online to diagnose and fix them immediately:
+                    If you are experiencing any of the following problems with your <?php echo strtolower($srv['title']); ?>, our technical specialists will connect with you online to diagnose and fix them immediately:
                 </p>
 
                 <div style="display: flex; flex-direction: column; gap: 1.25rem;">
@@ -180,7 +180,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <!-- 4-Step 100% Online Resolution Workflow -->
+            <!-- 4-Step Certified Online Resolution Workflow -->
             <div>
                 <div style="color: var(--accent); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Simple & Fast</div>
                 <h2 style="font-size: 2.25rem; margin-bottom: 1.25rem;" class="text-gradient">
@@ -196,20 +196,20 @@ include_once __DIR__ . '/includes/header.php';
 
                     <div class="step-card" style="padding: 1.5rem;">
                         <span class="step-badge" style="background: var(--accent);">Step 2</span>
-                        <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.35rem;">2. Instant Remote Desk / Video Connection</h4>
-                        <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Our remote specialist contacts you via secure screen-share link or live video diagnostic call.</p>
+                        <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.35rem;">2. Instant Online Screen / Video Connection</h4>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Our technical specialist contacts you via secure screen-share link or live video diagnostic call.</p>
                     </div>
 
                     <div class="step-card" style="padding: 1.5rem;">
                         <span class="step-badge" style="background: #a855f7;">Step 3</span>
-                        <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.35rem;">3. Expert Remote Diagnostics & Fix</h4>
+                        <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.35rem;">3. Expert Online Diagnostics & Fix</h4>
                         <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">We reconfigure drivers, IP settings, clear software bugs, or guide you step-by-step through appliance resets.</p>
                     </div>
 
                     <div class="step-card" style="padding: 1.5rem;">
                         <span class="step-badge" style="background: var(--success);">Step 4</span>
                         <h4 style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0.35rem;">4. Tested, Verified & 90-Day Guaranteed</h4>
-                        <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">We run full functional tests to verify resolution and issue your written 90-day remote guarantee certificate.</p>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">We run full functional tests to verify resolution and issue your written 90-day guarantee certificate.</p>
                     </div>
                 </div>
             </div>
@@ -218,16 +218,14 @@ include_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-
-
-<!-- 5. WHAT YOU NEED FOR A REMOTE SESSION -->
+<!-- 5. WHAT YOU NEED FOR AN ONLINE SESSION -->
 <section style="padding: 5rem 0; background: var(--bg-light);">
     <div class="container">
         <div class="glass-card" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 3rem; text-align: center;">
             <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.2); border: 1px solid rgba(37, 99, 235, 0.4); color: #60a5fa; padding: 0.3rem 0.85rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem;">
                 <i class="ri-checkbox-circle-line"></i> Requirements Checklist
             </div>
-            <h2 style="font-size: 2.25rem; color: #ffffff; margin-bottom: 1rem;">What You Need For Your 100% Online Session</h2>
+            <h2 style="font-size: 2.25rem; color: #ffffff; margin-bottom: 1rem;">What You Need For Your Online Session</h2>
             <p style="color: #94a3b8; font-size: 1rem; max-width: 650px; margin: 0 auto 2.5rem;">
                 No complicated software required. Getting started takes just 3 simple things:
             </p>
@@ -248,13 +246,13 @@ include_once __DIR__ . '/includes/header.php';
                 <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem;">
                     <div style="font-size: 1.75rem; color: #fb923c; margin-bottom: 0.5rem;"><i class="ri-time-line"></i></div>
                     <h4 style="color: #ffffff; margin-bottom: 0.35rem;">3. 10 to 15 Minutes</h4>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">That's it! Our remote specialist guides you step-by-step until your issue is resolved.</p>
+                    <p style="font-size: 0.85rem; color: #cbd5e1;">That's it! Our technical specialist guides you step-by-step until your issue is resolved.</p>
                 </div>
             </div>
 
             <div style="margin-top: 2.5rem;">
                 <button class="btn btn-accent open-booking-modal" data-service="<?php echo $slug; ?>" style="padding: 0.85rem 2rem;">
-                    <i class="ri-remote-control-line"></i> Start Online Session Now
+                    <i class="ri-global-line"></i> Start Online Session Now
                 </button>
             </div>
         </div>
@@ -268,11 +266,11 @@ include_once __DIR__ . '/includes/header.php';
             Ready to Fix Your <?php echo $srv['title']; ?> Online?
         </h2>
         <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 2rem;">
-            No waiting for technician travel. Connect with a certified remote specialist right now and resolve your technical issue 100% online.
+            No waiting for technician travel. Connect with a certified technical specialist right now and resolve your technical issue completely online.
         </p>
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
             <button class="btn btn-accent open-booking-modal" data-service="<?php echo $slug; ?>" style="padding: 0.85rem 2rem;">
-                <i class="ri-flashlight-fill"></i> Connect Remotely Now
+                <i class="ri-flashlight-fill"></i> Connect Online Now
             </button>
             <a href="tel:<?php echo PHONE_RAW; ?>" class="btn btn-outline" style="padding: 0.85rem 2rem;">
                 <i class="ri-phone-fill"></i> Hotline: <?php echo PHONE_NUMBER; ?>
@@ -286,13 +284,13 @@ include_once __DIR__ . '/includes/header.php';
 {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "100% Online <?php echo htmlspecialchars($srv['title']); ?>",
+    "name": "Certified Online <?php echo htmlspecialchars($srv['title']); ?>",
     "provider": {
         "@type": "OnlineBusiness",
         "name": "<?php echo SITE_NAME; ?>"
     },
-    "serviceType": "100% Online Remote Technical Diagnostics & Repair",
-    "areaServed": "Worldwide & Nationwide 100% Online Remote",
+    "serviceType": "Certified Online Technical Diagnostics & Repair",
+    "areaServed": "Worldwide & Nationwide Certified Online",
     "description": "<?php echo htmlspecialchars($srv['full_desc']); ?>",
     "termsOfService": "<?php echo SITE_URL; ?>/terms.php"
 }

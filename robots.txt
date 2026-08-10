@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://localhost/totaltech/geekassistappli/sitemap.xml
+Sitemap: https://geekassistappliance.com/sitemap.php

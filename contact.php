@@ -1,7 +1,7 @@
 <?php
-$page_title = "Contact GeekAssist Appliance | 100% Online Remote Tech Support Desk";
-$page_desc = "Get in touch with GeekAssist Appliance for immediate 100% online remote appliance diagnostic and printer technical support. Instant online screen-share & phone support.";
-$page_keywords = "contact geekassist appliance, online tech support hotline, remote appliance diagnostic help desk, printer support telephone, virtual technical assistance";
+$page_title = "Contact GeekAssist Appliance | Certified Online Tech Support Desk";
+$page_desc = "Get in touch with GeekAssist Appliance for immediate certified online appliance diagnostic and printer technical support. Instant online screen-share & phone support.";
+$page_keywords = "contact geekassist appliance, online tech support hotline, online appliance diagnostic help desk, printer support telephone, virtual technical assistance";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -9,13 +9,13 @@ include_once __DIR__ . '/includes/header.php';
 <section style="padding: 4rem 0 3rem; background: radial-gradient(circle at 50% 0%, #eff6ff 0%, #f8fafc 100%); border-bottom: 1px solid var(--border-light);">
     <div class="container" style="text-align: center; max-width: 800px;">
         <div class="hero-badge" style="margin-bottom: 1rem;">
-            <i class="ri-global-line"></i> 100% Online Remote Support
+            <i class="ri-global-line"></i> Certified Online Technical Support
         </div>
         <h1 style="font-size: 3rem; margin-bottom: 1rem;" class="text-gradient">
-            Contact GeekAssist Appliance Remote Support
+            Contact GeekAssist Appliance Technical Support
         </h1>
         <p style="color: var(--text-muted); font-size: 1.1rem;">
-            Have questions about an appliance error code or need instant online printer setup? Connect with our remote technical team today.
+            Have questions about an appliance error code or need instant online printer setup? Connect with our technical team today.
         </p>
     </div>
 </section>
@@ -86,28 +86,28 @@ include_once __DIR__ . '/includes/header.php';
                     <div class="grid grid-cols-2" style="gap: 1rem;">
                         <div class="form-group">
                             <label class="form-label">First Name *</label>
-                            <input type="text" class="form-control" placeholder="John" required>
+                            <input type="text" name="first_name" class="form-control" placeholder="John" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Last Name *</label>
-                            <input type="text" class="form-control" placeholder="Doe" required>
+                            <input type="text" name="last_name" class="form-control" placeholder="Doe" required>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-2" style="gap: 1rem;">
                         <div class="form-group">
                             <label class="form-label">Phone Number *</label>
-                            <input type="tel" class="form-control" placeholder="(808) 555-0199" required>
+                            <input type="tel" name="phone" class="form-control" placeholder="(808) 555-0199" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Email Address *</label>
-                            <input type="email" class="form-control" placeholder="john@example.com" required>
+                            <input type="email" name="email" class="form-control" placeholder="john@example.com" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Service Category</label>
-                        <select class="form-control">
+                        <select name="service" class="form-control">
                             <option value="appliance">Kitchen / Laundry Appliance Repair</option>
                             <option value="printer">Printer / Copier Network Service</option>
                             <option value="tech-computer">Computer & Smart Office Tech Support</option>
@@ -118,7 +118,7 @@ include_once __DIR__ . '/includes/header.php';
 
                     <div class="form-group">
                         <label class="form-label">Your Message / Equipment Symptom *</label>
-                        <textarea class="form-control" rows="4" placeholder="Describe the issue you are experiencing..." required></textarea>
+                        <textarea name="message" class="form-control" rows="4" placeholder="Describe the issue you are experiencing..." required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem;">

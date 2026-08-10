@@ -1,8 +1,8 @@
 <?php
 include_once __DIR__ . '/make_logo.php';
-$page_title = "100% Online Remote Tech & Appliance Support | Instant Virtual Fix";
-$page_desc = "Instant 100% online remote support for refrigerators, washing machines, dryers, ovens, dishwashers, commercial equipment, and office printers. Zero home visit needed.";
-$page_keywords = "100% online remote tech support, virtual appliance diagnostics, online printer repair, HP printer setup online, remote refrigerator troubleshooting, instant remote desktop tech help";
+$page_title = "Rapid, Dependable Appliance & Tech Support | GeekAssist Appliance";
+$page_desc = "Rapid, dependable appliance repair and tech support right when you need it most. Certified online diagnostics for refrigerators, washing machines, dryers, ovens, dishwashers, commercial equipment, and office printers. Zero home visit needed.";
+$page_keywords = "rapid dependable appliance repair, tech support right when you need it, certified online tech support, virtual appliance diagnostics, online printer repair, HP printer setup online";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -13,17 +13,17 @@ include_once __DIR__ . '/includes/header.php';
             <!-- Left Column: Copy & CTAs -->
             <div>
                 <div class="hero-badge">
-                    <i class="ri-global-line" style="color: var(--primary);"></i> 🌐 100% Online Remote Resolution — Zero In-Person Visit Needed
+                    <i class="ri-global-line" style="color: var(--primary);"></i> 🌐 Certified Virtual Resolution — Zero In-Person Visit Needed
                 </div>
                 <h1 class="hero-title">
-                    Instant <span class="text-gradient-cyan">100% Online Remote</span> Tech & Appliance Support
+                    Rapid, Dependable <span class="text-gradient-cyan">Appliance & Tech Assistance</span> Right When You Need It Most
                 </h1>
                 <p class="hero-desc">
-                    Resolve printer WiFi errors, software bugs, driver crashes, network setup, and appliance error diagnostics <strong>100% Online Remotely — No Home Visit Required!</strong> Connect with certified remote specialists in minutes.
+                    Get swift, trusted diagnostic evaluations and technical fixes for home appliances, office printers, and smart equipment. <strong>Fully Online — Fast, Secure & Guaranteed!</strong> Connect with certified specialists in minutes.
                 </p>
                 <div class="hero-actions">
                     <a href="<?php echo SITE_URL; ?>/booking.php" class="btn btn-accent">
-                        <i class="ri-remote-control-line"></i> Start 100% Online Session
+                        <i class="ri-global-line"></i> Start Online Virtual Session
                     </a>
                     <a href="<?php echo SITE_URL; ?>/services.php" class="btn btn-outline">
                         <i class="ri-grid-fill"></i> View All 17 Services
@@ -33,7 +33,7 @@ include_once __DIR__ . '/includes/header.php';
                 <!-- Live Dispatch Ticker -->
                 <div style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 0.625rem; background: var(--bg-surface); padding: 0.5rem 1rem; border-radius: var(--radius-full); border: 1px solid var(--border-light); font-size: 0.825rem; font-weight: 600; box-shadow: var(--shadow-sm);">
                     <span class="pulse-dot"></span>
-                    <span style="color: var(--text-main);">⚡ 5 Certified Remote Tech Specialists Online & Active Right Now</span>
+                    <span style="color: var(--text-main);">⚡ 5 Certified Technical Specialists Online & Active Right Now</span>
                 </div>
 
                 <div class="hero-stats">
@@ -61,22 +61,22 @@ include_once __DIR__ . '/includes/header.php';
                             <span class="pulse-dot"></span> Instant Connect
                         </span>
                     </div>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Fill out your details below for immediate 100% online remote assistance.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Fill out your details below for immediate direct online technical assistance.</p>
 
                     <form id="hero-quick-request-form">
                         <div class="form-group" style="margin-bottom: 1rem;">
                             <label class="form-label" style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Full Name *</label>
-                            <input type="text" class="form-control" placeholder="Enter your full name" required style="padding: 0.7rem 0.9rem; font-size: 0.9rem;">
+                            <input type="text" name="full_name" class="form-control" placeholder="Enter your full name" required style="padding: 0.7rem 0.9rem; font-size: 0.9rem;">
                         </div>
 
                         <div class="form-group" style="margin-bottom: 1rem;">
                             <label class="form-label" style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Phone Number *</label>
-                            <input type="tel" class="form-control" placeholder="Enter phone number" required style="padding: 0.7rem 0.9rem; font-size: 0.9rem;">
+                            <input type="tel" name="phone" class="form-control" placeholder="Enter phone number" required style="padding: 0.7rem 0.9rem; font-size: 0.9rem;">
                         </div>
 
                         <div class="form-group" style="margin-bottom: 1rem;">
                             <label class="form-label" style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Service Category *</label>
-                            <select class="form-control" required style="padding: 0.7rem 0.9rem; font-size: 0.9rem;">
+                            <select name="service" class="form-control" required style="padding: 0.7rem 0.9rem; font-size: 0.9rem;">
                                 <option value="">-- Select Service Category --</option>
                                 <option value="printer-service">Printer / Copier Network Support</option>
                                 <option value="refrigerator-repair">Refrigerator & Freezer Repair</option>
@@ -91,16 +91,16 @@ include_once __DIR__ . '/includes/header.php';
 
                         <div class="form-group" style="margin-bottom: 1.25rem;">
                             <label class="form-label" style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Appliance & Issue Description *</label>
-                            <textarea class="form-control" rows="3" placeholder="e.g. HP printer showing WiFi offline error, or Samsung fridge error code..." required style="padding: 0.7rem 0.9rem; font-size: 0.9rem; resize: none;"></textarea>
+                            <textarea name="description" class="form-control" rows="3" placeholder="e.g. HP printer showing WiFi offline error, or Samsung fridge error code..." required style="padding: 0.7rem 0.9rem; font-size: 0.9rem; resize: none;"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-accent" style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 0.95rem;">
-                            <i class="ri-remote-control-line"></i> Connect With Specialist Now
+                            <i class="ri-headset-line"></i> Connect With Specialist Now
                         </button>
                     </form>
 
                     <div style="font-size: 0.775rem; color: var(--text-muted); text-align: center; margin-top: 1rem; font-weight: 500;">
-                        <i class="ri-shield-check-line" style="color: var(--success);"></i> 100% Secure & Confidential • 15 Min Response
+                        <i class="ri-shield-check-line" style="color: var(--success);"></i> Fully Secure & Confidential • 15 Min Response
                     </div>
                 </div>
             </div>
@@ -113,8 +113,8 @@ include_once __DIR__ . '/includes/header.php';
     <div class="container">
         <div style="text-align: center; max-width: 700px; margin: 0 auto 2.5rem;">
             <div style="color: var(--primary); font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Instant Virtual Services</div>
-            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;" class="text-gradient">Our 100% Online Remote Support Catalog</h2>
-            <p style="color: var(--text-muted); font-size: 1rem;">Select your appliance or tech equipment below to connect with a certified remote specialist immediately.</p>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;" class="text-gradient">Our Certified Online Support Catalog</h2>
+            <p style="color: var(--text-muted); font-size: 1rem;">Select your appliance or tech equipment below to connect with a certified technical specialist immediately.</p>
         </div>
 
         <!-- Category Filter Tabs Bar -->
@@ -218,7 +218,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-global-line"></i>
                 </div>
                 <div>
-                    <h4 style="font-size: 1rem; margin-bottom: 0.2rem;">100% Online Remote</h4>
+                    <h4 style="font-size: 1rem; margin-bottom: 0.2rem;">Fully Online Virtual</h4>
                     <p style="font-size: 0.825rem; color: var(--text-muted);">Zero home visit needed</p>
                 </div>
             </div>
@@ -231,8 +231,8 @@ include_once __DIR__ . '/includes/header.php';
     <div class="container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 3.5rem;">
             <div style="color: var(--primary); font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">What We Do</div>
-            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;" class="text-gradient">100% Online Remote Technical Solutions</h2>
-            <p style="color: var(--text-muted); font-size: 1rem;">We specialize in instant virtual diagnostic evaluations and 100% remote software & network repairs across 3 core technical domains.</p>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;" class="text-gradient">Comprehensive Technical Solutions</h2>
+            <p style="color: var(--text-muted); font-size: 1rem;">We specialize in instant virtual diagnostic evaluations and certified online software & network repairs across 3 core technical domains.</p>
         </div>
 
         <div class="grid grid-cols-3">
@@ -258,7 +258,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <h3 style="font-size: 1.25rem; margin-bottom: 0.65rem;">Printer & Office Tech Config</h3>
                 <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
-                    100% Remote screen-share configuration for wireless printers, laser copiers, scan-to-folder SMB setup, print spoolers, and vendor drivers.
+                    Certified online screen-share configuration for wireless printers, laser copiers, scan-to-folder SMB setup, print spoolers, and vendor drivers.
                 </p>
                 <ul class="service-card-features">
                     <li><i class="ri-checkbox-circle-fill"></i> WiFi offline status & IP binding fix</li>
@@ -273,7 +273,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <h3 style="font-size: 1.25rem; margin-bottom: 0.65rem;">Computers & Smart Home Tech</h3>
                 <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
-                    Remote desktop speed optimization, malware removal, video doorbell WiFi pairing, smart thermostat setup, and CCTV IP camera setup.
+                    Online desktop speed optimization, malware removal, video doorbell WiFi pairing, smart thermostat setup, and CCTV IP camera setup.
                 </p>
                 <ul class="service-card-features">
                     <li><i class="ri-checkbox-circle-fill"></i> System speedup & malware cleanup</li>
@@ -296,7 +296,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
 
                 <h2 style="font-size: 2.65rem; margin-bottom: 1.25rem; line-height: 1.2;" class="text-gradient">
-                    The Premier 100% Online Remote Technical Advantage
+                    The Premier Virtual Technical Advantage
                 </h2>
 
                 <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
@@ -306,7 +306,7 @@ include_once __DIR__ . '/includes/header.php';
                 <!-- High Impact Stats Bar -->
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-bottom: 2.25rem;">
                     <div style="padding: 1.25rem; background: var(--bg-light); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
-                        <div style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; color: var(--primary);">100% Virtual</div>
+                        <div style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; color: var(--primary);">Fully Virtual</div>
                         <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-top: 0.2rem;">Zero Home Visit Needed</div>
                     </div>
                     <div style="padding: 1.25rem; background: var(--bg-light); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
@@ -316,7 +316,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
 
                 <button class="btn btn-accent open-booking-modal" data-service="general-support" style="padding: 0.9rem 2rem; font-size: 0.95rem;">
-                    <i class="ri-remote-control-line"></i> Experience Instant Remote Support Now
+                    <i class="ri-headset-line"></i> Experience Instant Virtual Support Now
                 </button>
             </div>
 
@@ -330,7 +330,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.4rem;">Under 15 Min Connect</h3>
                     <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
-                        Instant remote screen-share setup with certified tech specialists without long queues.
+                        Instant online screen-share setup with certified tech specialists without long queues.
                     </p>
                 </div>
 
@@ -341,7 +341,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.4rem;">256-Bit Encrypted</h3>
                     <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
-                        Bank-grade end-to-end security. You retain 100% session control and can disconnect anytime.
+                        Bank-grade end-to-end security. You retain full manual session control and can disconnect anytime.
                     </p>
                 </div>
 
@@ -352,7 +352,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.4rem;">Full Support Commitment</h3>
                     <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
-                        All remote resolutions are backed by our written 90-day technical support certificate.
+                        All online resolutions are backed by our written 90-day technical support certificate.
                     </p>
                 </div>
 
@@ -401,14 +401,14 @@ include_once __DIR__ . '/includes/header.php';
             <div class="step-card">
                 <span class="step-badge" style="background: var(--accent);">Step 02</span>
                 <div class="step-icon-box" style="background: var(--accent-subtle); color: var(--accent); border-color: #ffedd5;">
-                    <i class="ri-remote-control-line"></i>
+                    <i class="ri-global-line"></i>
                 </div>
-                <h3 style="font-size: 1.2rem; margin-bottom: 0.65rem;">2. 1-Click Remote Desktop Connection</h3>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.65rem;">2. 1-Click Online Desktop Connection</h3>
                 <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
-                    Receive an instant 1-click remote desktop link or live video diagnostic call from our certified remote tech specialist.
+                    Receive an instant 1-click online connection link or live video diagnostic call from our certified technical specialist.
                 </p>
                 <div style="margin-top: 1.25rem; font-size: 0.825rem; color: var(--accent); font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem;">
-                    <i class="ri-shield-check-fill"></i> 100% Encrypted & Safe
+                    <i class="ri-shield-check-fill"></i> Fully Encrypted & Safe
                 </div>
             </div>
 
@@ -420,10 +420,10 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <h3 style="font-size: 1.2rem; margin-bottom: 0.65rem;">3. Fixed & Tested Resolution</h3>
                 <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
-                    Watch your issue fixed in real-time, test your system, and receive a written 90-day remote resolution certificate.
+                    Watch your issue fixed in real-time, test your system, and receive a written 90-day resolution guarantee certificate.
                 </p>
                 <div style="margin-top: 1.25rem; font-size: 0.825rem; color: var(--success); font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem;">
-                    <i class="ri-award-fill"></i> 90-Day Remote Resolution Support
+                    <i class="ri-award-fill"></i> 90-Day Online Resolution Support
                 </div>
             </div>
         </div>
@@ -441,7 +441,7 @@ include_once __DIR__ . '/includes/header.php';
                 Common Symptoms We Fix Completely Online
             </h2>
             <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
-                Select your equipment fault below to connect with a certified remote specialist for instant screen-share or video diagnostics.
+                Select your equipment fault below to connect with a certified technical specialist for instant screen-share or video diagnostics.
             </p>
         </div>
 
@@ -465,7 +465,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <div>
                         <button class="btn btn-accent open-booking-modal" data-service="refrigerator-repair" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-                            <i class="ri-remote-control-line"></i> Fix Online Now
+                            <i class="ri-headset-line"></i> Fix Online Now
                         </button>
                     </div>
                 </div>
@@ -490,7 +490,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <div>
                         <button class="btn btn-accent open-booking-modal" data-service="printer-service" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-                            <i class="ri-remote-control-line"></i> Fix Printer Online
+                            <i class="ri-headset-line"></i> Fix Printer Online
                         </button>
                     </div>
                 </div>
@@ -515,7 +515,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <div>
                         <button class="btn btn-accent open-booking-modal" data-service="washer-repair" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-                            <i class="ri-remote-control-line"></i> Fix Online Now
+                            <i class="ri-headset-line"></i> Fix Online Now
                         </button>
                     </div>
                 </div>
@@ -540,7 +540,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <div>
                         <button class="btn btn-accent open-booking-modal" data-service="oven-repair" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-                            <i class="ri-remote-control-line"></i> Fix Online Now
+                            <i class="ri-headset-line"></i> Fix Online Now
                         </button>
                     </div>
                 </div>
@@ -565,7 +565,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <div>
                         <button class="btn btn-accent open-booking-modal" data-service="dryer-repair" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-                            <i class="ri-remote-control-line"></i> Fix Online Now
+                            <i class="ri-headset-line"></i> Fix Online Now
                         </button>
                     </div>
                 </div>
@@ -590,7 +590,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
                     <div>
                         <button class="btn btn-accent open-booking-modal" data-service="laptop-desktop-repair" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-                            <i class="ri-remote-control-line"></i> Fix Tech Online
+                            <i class="ri-headset-line"></i> Fix Tech Online
                         </button>
                     </div>
                 </div>
@@ -606,10 +606,10 @@ include_once __DIR__ . '/includes/header.php';
             <div>
                 <span class="status-badge" style="margin-bottom: 1rem;">Specialized Office & Tech Service</span>
                 <h2 style="font-size: 2.25rem; margin-bottom: 1.25rem;" class="text-gradient">
-                    100% Online Printer Installation & Network Setup
+                    Certified Online Printer Installation & Network Setup
                 </h2>
                 <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.7;">
-                    Is your office copier or home printer offline, jamming, or refusing to connect to your WiFi network? Our certified remote specialists perform comprehensive 100% online maintenance.
+                    Is your office copier or home printer offline, jamming, or refusing to connect to your WiFi network? Our certified technical specialists perform comprehensive virtual maintenance.
                 </p>
                 <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
                     <li style="display: flex; align-items: center; gap: 0.625rem; font-size: 0.95rem; font-weight: 500;">
@@ -652,110 +652,6 @@ include_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- 7.5 HP PRINTER SPECIALIZED REMOTE SUPPORT SECTION (BEST LAYOUT WITH HP LOGO) -->
-<section style="padding: 5rem 0; background: linear-gradient(135deg, #0096d6 0%, #0284c7 100%); color: #ffffff; position: relative; overflow: hidden;">
-    <div class="container">
-        <div class="grid grid-cols-2" style="align-items: center; gap: 3.5rem;">
-            <!-- Left Side: Official HP Printer Verified Card -->
-            <div style="background: rgba(255, 255, 255, 0.98); border-radius: var(--radius-md); padding: 2.5rem; color: var(--text-main); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); border: 2px solid #ffffff; position: relative;">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-light); padding-bottom: 1rem;">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <img src="<?php echo SITE_URL; ?>/assets/images/1.webp" alt="HP Logo" style="width: 56px; height: 56px; display: block; object-fit: contain;">
-                        <div>
-                            <h3 style="font-size: 1.35rem; color: #0096d6; font-weight: 800; margin-bottom: 0.15rem;">HP Printer Remote Center</h3>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Specialized Remote Diagnostics & Support</div>
-                        </div>
-                    </div>
-                    <span class="status-badge" style="background: rgba(16, 185, 129, 0.12); color: var(--success); border-color: rgba(16, 185, 129, 0.3); font-size: 0.775rem; padding: 0.3rem 0.75rem;">
-                        <i class="ri-checkbox-circle-fill"></i> Authorized Techs
-                    </span>
-                </div>
-
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Supported Series</div>
-                        <div style="font-size: 0.95rem; font-weight: 800; color: var(--text-main); margin-top: 0.2rem;">LaserJet & OfficeJet Pro</div>
-                    </div>
-                    <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Tank Printers</div>
-                        <div style="font-size: 0.95rem; font-weight: 800; color: var(--text-main); margin-top: 0.2rem;">HP Smart Tank & ENVY</div>
-                    </div>
-                    <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Average Fix Time</div>
-                        <div style="font-size: 0.95rem; font-weight: 800; color: var(--success); margin-top: 0.2rem;"><i class="ri-flashlight-fill"></i> 10 - 15 Minutes</div>
-                    </div>
-                    <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Resolution Support</div>
-                        <div style="font-size: 0.95rem; font-weight: 800; color: var(--primary); margin-top: 0.2rem;"><i class="ri-shield-check-fill"></i> 90-Day Written</div>
-                    </div>
-                </div>
-
-                <button class="btn btn-accent open-booking-modal" data-service="printer-service" style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 0.95rem;">
-                    <i class="ri-remote-control-line"></i> Connect With HP Remote Specialist
-                </button>
-            </div>
-
-            <!-- Right Side: Copy & Technical Capabilities -->
-            <div>
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.15); padding: 0.35rem 0.9rem; border-radius: var(--radius-sm); font-size: 0.825rem; font-weight: 700; margin-bottom: 1rem; border: 1px solid rgba(255, 255, 255, 0.3);">
-                    <i class="ri-award-fill" style="color: #fde047;"></i> Specialized HP Printer Support Partner
-                </div>
-                <h2 style="font-size: 2.35rem; color: #ffffff; line-height: 1.25; margin-bottom: 1.25rem;">
-                    100% Online HP Printer Setup & Troubleshooting
-                </h2>
-                <p style="color: #e0f2fe; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.75rem;">
-                    Is your HP printer offline, disconnected from WiFi, jamming, flashing error codes, or failing to scan? Our certified HP printer remote specialists diagnose and fix your HP hardware & software issues 100% Online Remotely in under 15 minutes!
-                </p>
-
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;">
-                    <div style="display: flex; align-items: flex-start; gap: 0.65rem;">
-                        <i class="ri-checkbox-circle-fill" style="color: #4ade80; font-size: 1.25rem; margin-top: 0.1rem;"></i>
-                        <div>
-                            <h4 style="font-size: 0.95rem; color: #ffffff; font-weight: 700; margin-bottom: 0.15rem;">HP WiFi & IP Offline Fix</h4>
-                            <p style="font-size: 0.825rem; color: #bae6fd; margin: 0;">Router reconnect & spooler reset</p>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; align-items: flex-start; gap: 0.65rem;">
-                        <i class="ri-checkbox-circle-fill" style="color: #4ade80; font-size: 1.25rem; margin-top: 0.1rem;"></i>
-                        <div>
-                            <h4 style="font-size: 0.95rem; color: #ffffff; font-weight: 700; margin-bottom: 0.15rem;">HP Smart App & Scan-to-Folder</h4>
-                            <p style="font-size: 0.825rem; color: #bae6fd; margin: 0;">Scan to SMB folder & email setup</p>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; align-items: flex-start; gap: 0.65rem;">
-                        <i class="ri-checkbox-circle-fill" style="color: #4ade80; font-size: 1.25rem; margin-top: 0.1rem;"></i>
-                        <div>
-                            <h4 style="font-size: 0.95rem; color: #ffffff; font-weight: 700; margin-bottom: 0.15rem;">HP Driver Crash Resolution</h4>
-                            <p style="font-size: 0.825rem; color: #bae6fd; margin: 0;">Windows 11 & macOS Sonoma drivers</p>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; align-items: flex-start; gap: 0.65rem;">
-                        <i class="ri-checkbox-circle-fill" style="color: #4ade80; font-size: 1.25rem; margin-top: 0.1rem;"></i>
-                        <div>
-                            <h4 style="font-size: 0.95rem; color: #ffffff; font-weight: 700; margin-bottom: 0.15rem;">HP Printhead & Alignment</h4>
-                            <p style="font-size: 0.825rem; color: #bae6fd; margin: 0;">Nozzle cleaning & line streak fix</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-                    <a href="<?php echo SITE_URL; ?>/printer-service.php" class="btn btn-accent" style="padding: 0.85rem 1.75rem;">
-                        <i class="ri-printer-line"></i> Explore Full HP Printer Guide
-                    </a>
-                    <a href="tel:<?php echo PHONE_RAW; ?>" style="color: #ffffff; font-weight: 700; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: underline;">
-                        <i class="ri-phone-fill"></i> Call HP Support Helpline
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
 <!-- 9. FAQ ACCORDION -->
 <section style="background: var(--bg-light); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); padding: 5rem 0;">
     <div class="container">
@@ -767,7 +663,7 @@ include_once __DIR__ . '/includes/header.php';
         <div class="faq-accordion">
             <div class="faq-item active">
                 <button class="faq-question">
-                    <span>How fast can a remote specialist connect with me online?</span>
+                    <span>How fast can a technical specialist connect with me online?</span>
                     <i class="ri-chevron-down-line faq-icon"></i>
                 </button>
                 <div class="faq-answer">
@@ -781,17 +677,17 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-chevron-down-line faq-icon"></i>
                 </button>
                 <div class="faq-answer">
-                    Our initial 5-minute online diagnostic assessment is 100% free with any remote support session.
+                    Our initial 5-minute online diagnostic assessment is completely free with any technical support session.
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-question">
-                    <span>What kind of support commitment comes with the remote resolution?</span>
+                    <span>What kind of support commitment comes with the online resolution?</span>
                     <i class="ri-chevron-down-line faq-icon"></i>
                 </button>
                 <div class="faq-answer">
-                    All our remote technical resolutions are backed by a comprehensive 90-day written support commitment.
+                    All our online technical resolutions are backed by a comprehensive 90-day written support commitment.
                 </div>
             </div>
 
@@ -826,17 +722,17 @@ include_once __DIR__ . '/includes/header.php';
                 Search Engine Resource & Information
             </span>
             <h2 style="font-size: 2rem; color: #0f172a; font-weight: 800; line-height: 1.3;">
-                Premier 100% Online Remote Appliance & Technical Support Desk
+                Premier Virtual Technical & Appliance Support Desk
             </h2>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; color: #64748b; font-size: 0.9rem; line-height: 1.7;">
             <div>
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ri-remote-control-fill" style="color: var(--primary);"></i> Virtual Remote Technology
+                    <i class="ri-shield-flash-fill" style="color: var(--primary);"></i> Instant Virtual Technology
                 </h3>
                 <p>
-                    GeekAssist Appliance leads the industry in 100% online virtual technical diagnostics. Using bank-grade 256-bit encrypted screen share links and live guided video calls, our certified technicians resolve software glitches, driver crashes, network IP misconfigurations, and control board fault codes without requiring an expensive home visit or 4-hour waiting window.
+                    GeekAssist Appliance leads the industry in certified virtual technical diagnostics. Using bank-grade 256-bit encrypted screen share links and live guided video calls, our certified technicians resolve software glitches, driver crashes, network IP misconfigurations, and control board fault codes without requiring an expensive home visit or 4-hour waiting window.
                 </p>
             </div>
 
@@ -845,7 +741,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-printer-fill" style="color: var(--accent);"></i> HP & Office Printer Network Fix
                 </h3>
                 <p>
-                    Is your HP printer offline or failing to scan? Our specialized HP remote printer setup team diagnoses wireless disconnects, print spooler crashes, driver corruption on Windows 11 & macOS, and scan-to-folder SMB network shared folder permissions in under 15 minutes completely online.
+                    Is your HP printer offline or failing to scan? Our specialized HP printer setup team diagnoses wireless disconnects, print spooler crashes, driver corruption on Windows 11 & macOS, and scan-to-folder SMB network shared folder permissions in under 15 minutes completely online.
                 </p>
             </div>
 
@@ -869,7 +765,7 @@ include_once __DIR__ . '/includes/header.php';
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "How fast can a remote specialist connect with me online?",
+            "name": "How fast can a technical specialist connect with me online?",
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Our certified specialists connect with you via screen-share link or live video call within 10 to 15 minutes of your booking request."
@@ -880,15 +776,15 @@ include_once __DIR__ . '/includes/header.php';
             "name": "Do you charge an initial diagnostic fee?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Our initial 5-minute online diagnostic assessment is 100% free with any remote support session."
+                "text": "Our initial 5-minute online diagnostic assessment is completely free with any technical support session."
             }
         },
         {
             "@type": "Question",
-            "name": "What kind of support commitment comes with the remote resolution?",
+            "name": "What kind of support commitment comes with the online resolution?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "All our remote technical resolutions are backed by a comprehensive 90-day written support commitment."
+                "text": "All our online technical resolutions are backed by a comprehensive 90-day written support commitment."
             }
         },
         {

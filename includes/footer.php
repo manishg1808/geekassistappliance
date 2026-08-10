@@ -5,8 +5,8 @@ require_once __DIR__ . '/../config.php';
     <section style="background: linear-gradient(135deg, #eff6ff 0%, #fff7ed 100%); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); padding: 3rem 0;">
         <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
             <div>
-                <h3 style="font-size: 1.6rem; margin-bottom: 0.25rem;" class="text-gradient">Need Fast 100% Online Tech or Appliance Assistance?</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem;">Our certified remote technical specialists connect with you online in minutes.</p>
+                <h3 style="font-size: 1.6rem; margin-bottom: 0.25rem;" class="text-gradient">Need Fast Certified Online Tech or Appliance Assistance?</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Our certified technical specialists connect with you online in minutes.</p>
             </div>
             <div style="display: flex; gap: 1rem; align-items: center;">
                 <a href="tel:<?php echo PHONE_RAW; ?>" class="btn btn-accent">
@@ -29,7 +29,7 @@ require_once __DIR__ . '/../config.php';
                         <img src="<?php echo SITE_URL; ?>/assets/images/logo-light.svg" alt="GeekAssist Appliance Logo" style="height: 44px; width: auto; display: block;">
                     </a>
                     <p style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 1.25rem; line-height: 1.6;">
-                        GeekAssist Appliance is your premier provider for 100% online remote technical support, virtual appliance diagnostics, printer network setup, and computer troubleshooting.
+                        GeekAssist Appliance is your premier provider for certified online technical support, virtual appliance diagnostics, printer network setup, and computer troubleshooting.
                     </p>
                     <div style="display: flex; gap: 0.75rem;">
                         <a href="#" style="width: 34px; height: 34px; border-radius: 50%; background: #1e293b; display: flex; align-items: center; justify-content: center; color: #cbd5e1;" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
@@ -71,7 +71,6 @@ require_once __DIR__ . '/../config.php';
                         <li><a href="<?php echo SITE_URL; ?>/terms.php">Terms & Conditions</a></li>
                         <li><a href="<?php echo SITE_URL; ?>/privacy-policy.php">Privacy Policy</a></li>
                         <li><a href="<?php echo SITE_URL; ?>/cookie-policy.php">Cookie Policy</a></li>
-                        <li><a href="<?php echo SITE_URL; ?>/disclaimer.php">Disclaimer Policy</a></li>
                         <li><a href="<?php echo SITE_URL; ?>/refund-cancellation-policy.php">Refund & Cancellation</a></li>
                     </ul>
                 </div>
@@ -90,13 +89,12 @@ require_once __DIR__ . '/../config.php';
             <!-- Footer Bottom Bar -->
             <div class="footer-bottom">
                 <div>
-                    © <?php echo date('Y'); ?> <?php echo SITE_NAME; ?>. All rights reserved. 100% Online Remote Tech & Appliance Support.
+                    © <?php echo date('Y'); ?> <?php echo SITE_NAME; ?>. All rights reserved. Certified Online Tech & Appliance Support.
                 </div>
                 <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
                     <a href="<?php echo SITE_URL; ?>/terms.php">Terms</a>
                     <a href="<?php echo SITE_URL; ?>/privacy-policy.php">Privacy</a>
                     <a href="<?php echo SITE_URL; ?>/cookie-policy.php">Cookies</a>
-                    <a href="<?php echo SITE_URL; ?>/disclaimer.php">Disclaimer</a>
                     <a href="<?php echo SITE_URL; ?>/refund-cancellation-policy.php">Refunds</a>
                 </div>
             </div>
@@ -107,6 +105,7 @@ require_once __DIR__ . '/../config.php';
     <?php include_once __DIR__ . '/booking-modal.php'; ?>
 
     <!-- Main JS File -->
-    <script src="<?php echo SITE_URL; ?>/assets/js/main.js"></script>
+    <script>window.SITE_BASE_URL = <?php echo json_encode(SITE_URL, JSON_UNESCAPED_SLASHES); ?>;</script>
+    <script src="<?php echo SITE_URL; ?>/assets/js/main.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>

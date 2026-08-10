@@ -1,7 +1,7 @@
 <?php
 $page_title = "Privacy Policy | GeekAssist Appliance";
-$page_desc = "GeekAssist Appliance Privacy Policy detailing how we collect, safeguard, and process personal data and remote support diagnostic logs under 256-bit encryption.";
-$page_keywords = "privacy policy, data privacy, encrypted remote session, user data protection, geekassist privacy";
+$page_desc = "GeekAssist Appliance Privacy Policy detailing how we collect, safeguard, and process personal data and online support diagnostic logs under 256-bit encryption.";
+$page_keywords = "privacy policy, data privacy, encrypted online session, user data protection, geekassist privacy";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -15,31 +15,31 @@ include_once __DIR__ . '/includes/header.php';
             Privacy Policy
         </h1>
         <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">
-            At GeekAssist Appliance, your privacy and data security are paramount. This Privacy Policy outlines how we collect, process, and protect your personal information during 100% online remote technical sessions.
+            At GeekAssist Appliance, your privacy and data security are            These Privacy Policy terms outline how we collect, process, and protect your personal information during certified online technical sessions.
         </p>
     </div>
 </section>
 
-<!-- Content Body -->
-<section style="padding: 4.5rem 0; background: #ffffff;">
+<!-- Content Section -->
+<section style="padding: 4.5rem 0;">
     <div class="container" style="max-width: 850px;">
-        <div class="glass-card" style="padding: 2.5rem; background: #ffffff; border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 2rem;">
+        <div class="glass-card" style="background: #ffffff; padding: 3rem;">
             
-            <div>
-                <h2 style="font-size: 1.4rem; color: var(--text-main); font-weight: 800; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ri-folder-user-fill" style="color: var(--primary);"></i> 1. Information We Collect
-                </h2>
+            <div style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="ri-user-shield-line" style="color: var(--primary);"></i> 1. Information Collection Scope
+                </h3>
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
-                    When requesting a remote technical session or submitting a diagnostic inquiry, we collect basic contact and equipment information including your full name, telephone number, email address, device model (e.g. HP LaserJet printer or Samsung refrigerator model), and a description of the error code or fault symptoms.
+                    When scheduling an online technical session, we collect necessary contact information (name, email address, phone number) and relevant equipment details (appliance model number, error code, operating system version) to deliver targeted technical diagnostics.
                 </p>
             </div>
 
-            <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
-                <h2 style="font-size: 1.4rem; color: var(--text-main); font-weight: 800; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ri-lock-2-fill" style="color: var(--accent);"></i> 2. Remote Session Encryption & Safety
-                </h2>
+            <div style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="ri-lock-2-line" style="color: var(--primary);"></i> 2. Screen Share & Data Protection Security
+                </h3>
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
-                    All virtual screen-share connections and remote diagnostic sessions are established over bank-grade 256-bit SSL/TLS encrypted connections. Our technicians can only view and access elements required to resolve your specific technical issue. You maintain 100% manual control and can terminate the remote session at any time with a single click.
+                    All virtual screen-share connections and online diagnostic sessions are established over bank-grade 256-bit SSL/TLS encrypted connections. Our technicians can only view and access elements required to resolve your specific technical issue. You maintain full manual control and can terminate the online session at any time with a single click.
                 </p>
             </div>
 
@@ -53,11 +53,11 @@ include_once __DIR__ . '/includes/header.php';
                 <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.925rem; color: var(--text-muted);">
                     <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
                         <i class="ri-checkbox-circle-fill" style="color: var(--success); margin-top: 0.2rem;"></i>
-                        <span>Dispatch certified remote technical specialists to your session in under 15 minutes.</span>
+                        <span>Dispatch certified technical specialists to your session in under 15 minutes.</span>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
                         <i class="ri-checkbox-circle-fill" style="color: var(--success); margin-top: 0.2rem;"></i>
-                        <span>Issue your official written 90-day remote resolution guarantee certificate.</span>
+                        <span>Issue your official written 90-day resolution guarantee certificate.</span>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
                         <i class="ri-checkbox-circle-fill" style="color: var(--success); margin-top: 0.2rem;"></i>

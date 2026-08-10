@@ -1,21 +1,21 @@
 <?php
 $page_title = "Refund & Cancellation Policy | GeekAssist Appliance";
-$page_desc = "Refund and Cancellation Policy governing GeekAssist Appliance 100% online remote technical sessions, diagnostic evaluations, and 90-day resolution guarantee.";
-$page_keywords = "refund policy, cancellation policy, 90 day guarantee, remote tech session refund, geekassist refund policy";
+$page_desc = "Refund and Cancellation Policy governing GeekAssist Appliance certified online technical sessions, diagnostic evaluations, and 90-day resolution guarantee.";
+$page_keywords = "refund policy, cancellation policy, 90 day guarantee, service refund terms, geekassist policy";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
-<!-- Header Banner -->
+<!-- Header Hero Banner -->
 <section style="padding: 4rem 0 3rem; background: radial-gradient(circle at 50% 0%, #eff6ff 0%, #f8fafc 100%); border-bottom: 1px solid var(--border-light);">
     <div class="container" style="text-align: center; max-width: 800px;">
-        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-subtle); border: 1px solid var(--border-accent); color: var(--primary); padding: 0.35rem 0.9rem; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem;">
+        <div class="hero-badge" style="margin-bottom: 1rem;">
             <i class="ri-refund-2-line"></i> Customer Satisfaction Guarantee
         </div>
-        <h1 style="font-size: 2.75rem; margin-bottom: 1rem;" class="text-gradient">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;" class="text-gradient">
             Refund & Cancellation Policy
         </h1>
-        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">
-            We stand firmly behind the quality of our 100% online remote technical support. This policy outlines our cancellation guidelines and refund procedures under our 90-Day Written Resolution Guarantee.
+        <p style="color: var(--text-muted); font-size: 1.1rem;">
+            We stand firmly behind the quality of our certified online technical support. This policy outlines our cancellation guidelines and refund procedures under our 90-Day Written Resolution Guarantee.
         </p>
     </div>
 </section>
@@ -30,7 +30,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-search-eye-line" style="color: var(--primary);"></i> 1. Free Initial Diagnostic Assessment
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
-                    Our initial 5-minute online diagnostic evaluation is completely free of charge. If during this initial assessment our technician determines that your technical issue cannot be fixed remotely online, your session is ended at zero charge to you.
+                    Our initial 5-minute online diagnostic evaluation is completely free of charge. If during this initial assessment our technician determines that your technical issue cannot be fixed online, your session is ended at zero charge to you.
                 </p>
             </div>
 
@@ -39,7 +39,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-close-circle-fill" style="color: var(--accent);"></i> 2. Session Cancellation Policy
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
-                    You may cancel your scheduled remote support session at any time prior to the technician connecting to your device. Simply contact our dispatch desk or notify your assigned technician via phone or email. No cancellation fees apply for pre-session cancellations.
+                    You may cancel your scheduled online support session at any time prior to the technician connecting to your device. Simply contact our dispatch desk or notify your assigned technician via phone or email. No cancellation fees apply for pre-session cancellations.
                 </p>
             </div>
 
@@ -48,7 +48,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-shield-check-fill" style="color: var(--success);"></i> 3. 90-Day Written Resolution Guarantee & Refunds
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
-                    All completed remote technical resolution sessions are covered by our written 90-Day Resolution Guarantee:
+                    All completed online technical resolution sessions are covered by our written 90-Day Resolution Guarantee:
                 </p>
                 <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.925rem; color: var(--text-muted);">
                     <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
@@ -57,7 +57,7 @@ include_once __DIR__ . '/includes/header.php';
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
                         <i class="ri-checkbox-circle-fill" style="color: var(--success); margin-top: 0.2rem;"></i>
-                        <span><strong>Full Refund Eligibility:</strong> If our specialist is unable to resolve your technical issue after undertaking a remote support session, a full refund will be processed to your original payment method within 3–5 business days.</span>
+                        <span><strong>Full Refund Eligibility:</strong> If our specialist is unable to resolve your technical issue after undertaking an online support session, a full refund will be processed to your original payment method within 3–5 business days.</span>
                     </li>
                 </ul>
             </div>

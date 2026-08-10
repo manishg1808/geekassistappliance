@@ -1,36 +1,36 @@
 <?php
-$page_title = "Cookie Policy | GeekAssist Appliance";
-$page_desc = "Learn how GeekAssist Appliance uses essential cookies, performance preferences, and secure session management to deliver seamless 100% online remote technical support.";
-$page_keywords = "cookie policy, website cookies, session security, data protection, geekassist cookie policy";
+$page_title = "Cookie Policy | GeekAssist Appliance Technical Services";
+$page_desc = "Learn how GeekAssist Appliance uses essential cookies, performance preferences, and secure session management to deliver seamless certified online technical support.";
+$page_keywords = "cookie policy, geekassist cookies, website cookies, session management";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
-<!-- Header Banner -->
+<!-- Header Hero Banner -->
 <section style="padding: 4rem 0 3rem; background: radial-gradient(circle at 50% 0%, #eff6ff 0%, #f8fafc 100%); border-bottom: 1px solid var(--border-light);">
     <div class="container" style="text-align: center; max-width: 800px;">
-        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-subtle); border: 1px solid var(--border-accent); color: var(--primary); padding: 0.35rem 0.9rem; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem;">
-            <i class="ri-cookie-line"></i> Privacy & Transparency
+        <div class="hero-badge" style="margin-bottom: 1rem;">
+            <i class="ri-cookie-line"></i> Privacy & Cookie Transparency
         </div>
-        <h1 style="font-size: 2.75rem; margin-bottom: 1rem;" class="text-gradient">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;" class="text-gradient">
             Cookie Policy
         </h1>
-        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">
-            This Cookie Policy explains how GeekAssist Appliance uses cookies and similar tracking technologies to recognize you when you visit our website and utilize our 100% online remote technical support services.
+        <p style="color: var(--text-muted); font-size: 1.1rem;">
+            This Cookie Policy explains how GeekAssist Appliance uses cookies and similar tracking technologies to recognize you when you visit our website and utilize our certified online technical support services.
         </p>
     </div>
 </section>
 
-<!-- Cookie Policy Content Body -->
+<!-- Content Body -->
 <section style="padding: 4.5rem 0; background: #ffffff;">
     <div class="container" style="max-width: 850px;">
         <div class="glass-card" style="padding: 2.5rem; background: #ffffff; border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 2rem;">
             
             <div>
                 <h2 style="font-size: 1.4rem; color: var(--text-main); font-weight: 800; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ri-information-fill" style="color: var(--primary);"></i> 1. What Are Cookies?
+                    <i class="ri-question-line" style="color: var(--primary);"></i> 1. What Are Cookies?
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
-                    Cookies are small text files that are stored on your computer, smartphone, or tablet when you visit a website. They allow the website to recognize your browser, remember your user preferences, and ensure the secure execution of interactive tools such as our 100% online remote support request forms.
+                    Cookies are small text files that are stored on your computer, smartphone, or tablet when you visit a website. They allow the website to recognize your browser, remember your user preferences, and ensure the secure execution of interactive tools such as our certified online support request forms.
                 </p>
             </div>
 

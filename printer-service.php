@@ -1,40 +1,46 @@
 <?php
 include_once __DIR__ . '/make_logo.php';
-$page_title = "100% Online Remote Printer Setup & Diagnostic Services | Instant Fix";
-$page_desc = "Instant 100% online remote technician support for HP, Canon, Epson, Brother, Xerox, Ricoh & Zebra printers. Wireless network setup, driver fixes, printhead alignment, paper jam guidance & scan-to-folder configuration. Zero home visit needed.";
-$page_keywords = "remote printer support, HP printer offline fix, wireless printer setup online, printer driver crash repair, print spooler reset online, scan to folder SMB setup, Canon Epson Brother printer help";
+$page_title = "Certified Online Printer Setup & Diagnostic Services | Instant Fix";
+$page_desc = "Certified online technician support for HP, Canon, Epson, Brother, Xerox, Ricoh & Zebra printers. Wireless network setup, driver fixes, printhead alignment, paper jam guidance & scan-to-folder configuration. Zero home visit needed.";
+$page_keywords = "certified online printer setup, virtual printer diagnostics, HP printer offline fix, scan to folder SMB setup online, printer driver repair";
 include_once __DIR__ . '/includes/header.php';
 ?>
 
 <!-- 1. HERO BANNER SECTION -->
 <section style="padding: 4.5rem 0 3.5rem; background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%); border-bottom: 1px solid var(--border-light); position: relative;">
     <div class="container">
-        <div class="grid grid-cols-2" style="align-items: center; gap: 3rem;">
+        <div class="grid grid-cols-2" style="align-items: center; gap: 3.5rem;">
             <!-- Left Column -->
             <div>
-                <div class="hero-badge" style="margin-bottom: 1.25rem;">
-                    <i class="ri-global-line" style="color: var(--primary);"></i> 🌐 100% Online Remote Resolution — Zero In-Person Visit Needed
+                <div class="hero-badge" style="margin-bottom: 1rem;">
+                    <i class="ri-global-line" style="color: var(--primary);"></i> 🌐 Certified Online Virtual Resolution — Zero In-Person Visit Needed
                 </div>
-                <h1 style="font-size: 2.85rem; line-height: 1.2; margin-bottom: 1.25rem;" class="text-gradient">
-                    100% Online Remote Printer & Network Setup Specialist
+                <h1 style="font-size: 2.75rem; margin-bottom: 1rem; line-height: 1.25;" class="text-gradient">
+                    Certified Online Printer & Network Setup Specialist
                 </h1>
                 <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.75rem; line-height: 1.7;">
-                    Is your office copier or home printer offline, jamming, or refusing to connect to WiFi? <strong>We resolve WiFi offline status, IP spooler crashes, driver conflicts, printhead clogs, and scan-to-folder setups 100% Online Remotely in minutes!</strong>
+                    Is your office copier or home printer offline, jamming, or refusing to connect to WiFi? <strong>We resolve WiFi offline status, IP spooler crashes, driver conflicts, printhead clogs, and scan-to-folder setups completely online in minutes!</strong>
                 </p>
 
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.75rem;">
-                    <button class="btn btn-accent open-booking-modal" data-service="printer-service" style="padding: 0.85rem 1.75rem;">
-                        <i class="ri-remote-control-line"></i> Start Online Printer Session
-                    </button>
-                    <a href="tel:<?php echo PHONE_RAW; ?>" class="btn btn-outline" style="padding: 0.85rem 1.5rem;">
-                        <i class="ri-phone-fill"></i> Call Specialist: <?php echo PHONE_NUMBER; ?>
-                    </a>
+                <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 600; color: var(--text-main);">
+                        <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> HP, Canon, Epson, Brother, Xerox & Zebra Certified Techs
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 600; color: var(--text-main);">
+                        <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> Instant 1-Click Screen-Share Connection (No Long Waiting)
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 600; color: var(--text-main);">
+                        <i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> Backed by our 90-Day Resolution Guarantee Certificate
+                    </div>
                 </div>
 
-                <!-- Live Dispatch Ticker -->
-                <div style="display: inline-flex; align-items: center; gap: 0.625rem; background: #ffffff; padding: 0.5rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-accent); font-size: 0.825rem; font-weight: 600; box-shadow: var(--shadow-sm);">
-                    <span class="pulse-dot"></span>
-                    <span style="color: var(--text-main);">⚡ Certified Printer Specialists Active Right Now • < 15 Min Connect</span>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn btn-accent open-booking-modal" data-service="printer-service">
+                        <i class="ri-printer-line"></i> Connect With Printer Specialist Now
+                    </button>
+                    <a href="tel:<?php echo PHONE_RAW; ?>" class="btn btn-outline">
+                        <i class="ri-phone-line"></i> Hotline: <?php echo PHONE_NUMBER; ?>
+                    </a>
                 </div>
             </div>
 
@@ -44,7 +50,7 @@ include_once __DIR__ . '/includes/header.php';
                     <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
                         <h3 style="font-size: 1.2rem; color: var(--text-main);"><i class="ri-printer-line" style="color: var(--primary);"></i> Instant Session Matrix</h3>
                         <span class="status-badge" style="font-size: 0.725rem; padding: 0.25rem 0.6rem; background: var(--primary-subtle); color: var(--primary); border-color: var(--border-accent);">
-                            100% Remote Fix
+                            Certified Online Fix
                         </span>
                     </div>
 
@@ -68,7 +74,7 @@ include_once __DIR__ . '/includes/header.php';
                     </div>
 
                     <button class="btn btn-primary open-booking-modal" data-service="printer-service" style="width: 100%; justify-content: center; padding: 0.85rem;">
-                        <i class="ri-flashlight-line"></i> Connect With Remote Specialist Now
+                        <i class="ri-flashlight-line"></i> Connect With Technical Specialist Now
                     </button>
 
                     <div style="font-size: 0.775rem; color: var(--text-muted); text-align: center; margin-top: 1rem; font-weight: 500;">
@@ -90,7 +96,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <div>
                     <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">Under 15 Min Connect</h4>
-                    <p style="font-size: 0.8rem; color: var(--text-muted);">Instant remote screen-share</p>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Instant online screen-share</p>
                 </div>
             </div>
 
@@ -119,7 +125,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-lock-check-line"></i>
                 </div>
                 <div>
-                    <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">100% Encrypted & Safe</h4>
+                    <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">Fully Encrypted & Safe</h4>
                     <p style="font-size: 0.8rem; color: var(--text-muted);">Bank-grade session security</p>
                 </div>
             </div>
@@ -127,12 +133,12 @@ include_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- 3. COMPREHENSIVE REMOTE SOLUTIONS GRID (6 RECTANGULAR CARDS) -->
+<!-- 3. COMPREHENSIVE TECHNICAL SOLUTIONS GRID (6 RECTANGULAR CARDS) -->
 <section style="padding: 4.5rem 0; background: #ffffff;">
     <div class="container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 3rem;">
             <div style="color: var(--primary); font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Comprehensive Technical Coverage</div>
-            <h2 style="font-size: 2.25rem; margin-bottom: 1rem;" class="text-gradient">What We Resolve 100% Online Remotely</h2>
+            <h2 style="font-size: 2.25rem; margin-bottom: 1rem;" class="text-gradient">What We Resolve Online</h2>
             <p style="color: var(--text-muted); font-size: 1rem;">No matter the brand, model, or error code, our certified technicians troubleshoot and fix your printing issues in real time.</p>
         </div>
 
@@ -159,7 +165,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <h3 style="font-size: 1.15rem; margin-bottom: 0.65rem;">Printhead Clogs, Streaks & Blank Pages</h3>
                 <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
-                    Remote software nozzle cleaning cycles, deep purge procedures, ink density alignment, and faded toner cartridge calibration.
+                    Online software nozzle cleaning cycles, deep purge procedures, ink density alignment, and faded toner cartridge calibration.
                 </p>
                 <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.825rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.4rem;">
                     <li><i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> Printhead nozzle purge & alignment</li>
@@ -219,7 +225,7 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <h3 style="font-size: 1.15rem; margin-bottom: 0.65rem;">Shipping Label & Thermal Printers</h3>
                 <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
-                    Remote configuration for Zebra, Dymo, Rollo, and Brother thermal shipping label printers used for eBay, Amazon, Shopify, FedEx & UPS.
+                    Online configuration for Zebra, Dymo, Rollo, and Brother thermal shipping label printers used for eBay, Amazon, Shopify, FedEx & UPS.
                 </p>
                 <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.825rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.4rem;">
                     <li><i class="ri-checkbox-circle-fill" style="color: var(--success);"></i> 4x6 Label size & barcode calibration</li>
@@ -230,12 +236,12 @@ include_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- 4. HOW 100% ONLINE REMOTE PRINTER SUPPORT WORKS (4-STEP PROCESS) -->
+<!-- 4. HOW CERTIFIED ONLINE PRINTER SUPPORT WORKS (4-STEP PROCESS) -->
 <section style="padding: 4.5rem 0; background: var(--bg-light); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
     <div class="container">
         <div style="text-align: center; max-width: 700px; margin: 0 auto 3.5rem;">
             <div style="color: var(--primary); font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Simple 4-Step Resolution</div>
-            <h2 style="font-size: 2.25rem; margin-bottom: 1rem;" class="text-gradient">How Online Remote Printer Fix Works</h2>
+            <h2 style="font-size: 2.25rem; margin-bottom: 1rem;" class="text-gradient">How Online Printer Fix Works</h2>
             <p style="color: var(--text-muted); font-size: 1rem;">Get your printer back online and printing perfectly in 4 simple steps without waiting days for a technician.</p>
         </div>
 
@@ -258,18 +264,18 @@ include_once __DIR__ . '/includes/header.php';
                 </div>
                 <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Receive Session Link</h3>
                 <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
-                    Get an instant 1-click remote access session link sent straight to your email or smartphone.
+                    Get an instant 1-click online connection link sent straight to your email or smartphone.
                 </p>
             </div>
 
             <div class="step-card">
                 <span class="step-badge">Step 03</span>
                 <div class="step-icon-box">
-                    <i class="ri-remote-control-line"></i>
+                    <i class="ri-global-line"></i>
                 </div>
                 <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">1-Click Screen Share</h3>
                 <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
-                    Grant 100% secure, encrypted remote access to our certified printer technician to inspect drivers & IP.
+                    Grant fully secure, encrypted online access to our certified printer technician to inspect drivers & IP.
                 </p>
             </div>
 
@@ -287,25 +293,23 @@ include_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-
-
 <!-- 6. PRINTER FREQUENTLY ASKED QUESTIONS (FAQ) -->
 <section style="padding: 4.5rem 0; background: var(--bg-light);">
     <div class="container">
         <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
             <div style="color: var(--primary); font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Got Questions?</div>
             <h2 style="font-size: 2.25rem; margin-bottom: 1rem;" class="text-gradient">Printer Support Frequently Asked Questions</h2>
-            <p style="color: var(--text-muted); font-size: 1rem;">Everything you need to know about our 100% online remote printer setup & diagnostic sessions.</p>
+            <p style="color: var(--text-muted); font-size: 1rem;">Everything you need to know about our certified online printer setup & diagnostic sessions.</p>
         </div>
 
         <div class="faq-accordion">
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How can you fix my printer 100% online remotely without coming to my home?</span>
+                    <span>How can you fix my printer online without coming to my home?</span>
                     <i class="ri-add-line faq-icon"></i>
                 </div>
                 <div class="faq-answer">
-                    Over 95% of printer errors (showing offline status, print spooler crashes, driver corruption, WiFi network disconnections, and scan-to-folder misconfigurations) are purely software & IP network issues. Via our secure 1-click screen-share tool, our certified technician connects directly to your computer to repair driver settings, bind IP addresses, clean printhead nozzles, and re-establish printer communication remotely!
+                    Over 95% of printer errors (showing offline status, print spooler crashes, driver corruption, WiFi network disconnections, and scan-to-folder misconfigurations) are purely software & IP network issues. Via our secure 1-click screen-share tool, our certified technician connects directly to your computer to repair driver settings, bind IP addresses, clean printhead nozzles, and re-establish printer communication online!
                 </div>
             </div>
 
@@ -315,7 +319,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-add-line faq-icon"></i>
                 </div>
                 <div class="faq-answer">
-                    When upgrading to a new WiFi router, printers frequently lose connection due to 2.4GHz vs 5GHz frequency mismatches, WPA3 security incompatibility, or changing gateway IP subnets. Our remote specialists remotely log into your router management console and printer settings to configure dedicated 2.4GHz SSID channels, reserve static IP addresses, and connect your printer seamlessly.
+                    When upgrading to a new WiFi router, printers frequently lose connection due to 2.4GHz vs 5GHz frequency mismatches, WPA3 security incompatibility, or changing gateway IP subnets. Our technical specialists log into your router management console and printer settings to configure dedicated 2.4GHz SSID channels, reserve static IP addresses, and connect your printer seamlessly.
                 </div>
             </div>
 
@@ -331,11 +335,11 @@ include_once __DIR__ . '/includes/header.php';
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Is your remote desktop connection safe and secure for my personal data?</span>
+                    <span>Is your online screen connection safe and secure for my personal data?</span>
                     <i class="ri-add-line faq-icon"></i>
                 </div>
                 <div class="faq-answer">
-                    Absolutely. We use bank-grade 256-bit encrypted end-to-end remote access technology. You maintain 100% control of the session at all times, you can watch every action our technician performs on your screen in real time, and you can end the session with a single click at any second. Once the session ends, access is permanently revoked.
+                    Absolutely. We use bank-grade 256-bit encrypted end-to-end online connection technology. You maintain full manual control of the session at all times, you can watch every action our technician performs on your screen in real time, and you can end the session with a single click at any second. Once the session ends, access is permanently revoked.
                 </div>
             </div>
 
@@ -345,7 +349,7 @@ include_once __DIR__ . '/includes/header.php';
                     <i class="ri-add-line faq-icon"></i>
                 </div>
                 <div class="faq-answer">
-                    We operate under a strict 90-Day Written Resolution Guarantee. If our specialist determines that your printer has a fatal physical hardware failure (such as a cracked motherboard or broken gear) that cannot be resolved remotely, you are covered by our guarantee and will be provided with expert hardware buying recommendations free of charge.
+                    We operate under a strict 90-Day Written Resolution Guarantee. If our specialist determines that your printer has a fatal physical hardware failure (such as a cracked motherboard or broken gear) that cannot be resolved online, you are covered by our guarantee and will be provided with expert hardware buying recommendations free of charge.
                 </div>
             </div>
         </div>
@@ -356,11 +360,11 @@ include_once __DIR__ . '/includes/header.php';
 <section style="padding: 4.5rem 0; background: #ffffff;">
     <div class="container">
         <div class="cta-banner">
-            <h2>Get Your Printer Fixed 100% Online Right Now!</h2>
-            <p>Connect with a certified remote technician in under 15 minutes. No home visit required, no long waiting times, backed by our 90-day resolution guarantee.</p>
+            <h2>Get Your Printer Fixed Online Right Now!</h2>
+            <p>Connect with a certified technical specialist in under 15 minutes. No home visit required, no long waiting times, backed by our 90-day resolution guarantee.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <button class="btn btn-accent open-booking-modal" data-service="printer-service" style="padding: 0.95rem 2rem; font-size: 1rem;">
-                    <i class="ri-remote-control-line"></i> Connect With Printer Specialist (15 Min Fix)
+                    <i class="ri-headset-line"></i> Connect With Printer Specialist (15 Min Fix)
                 </button>
                 <a href="tel:<?php echo PHONE_RAW; ?>" class="btn btn-outline" style="background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: #ffffff;">
                     <i class="ri-phone-fill"></i> Call Now: <?php echo PHONE_NUMBER; ?>

@@ -21,26 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Hero Quick Support Request Form Handler
-  const heroQuickForm = document.getElementById('hero-quick-request-form');
-  if (heroQuickForm) {
-    heroQuickForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const submitBtn = heroQuickForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-      
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="ri-loader-4-line ri-spin"></i> Connecting...';
-
-      setTimeout(() => {
-        alert('Thank you! Your remote support request has been received. A certified technician will call you in under 15 minutes.');
-        heroQuickForm.reset();
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-      }, 1000);
-    });
-  }
-
   // 3. FAQ Accordion Toggle
   const faqQuestions = document.querySelectorAll('.faq-question');
   faqQuestions.forEach(question => {
@@ -133,52 +113,135 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Generic Form Submission Toast Simulation
-  const handleFormSubmit = (formId, successMsg) => {
+  // ============================================================
+  // 6. REAL AJAX Form Submission — sends data to send_mail.php
+  // ============================================================
+
+  /**
+   * Show inline alert inside a form
+   */
+  function showFormAlert(form, success, msg) {
+    let alertBox = form.querySelector('.form-alert');
+    if (!alertBox) {
+      alertBox = document.createElement('div');
+      alertBox.className = 'form-alert';
+      form.appendChild(alertBox);
+    }
+    alertBox.style.cssText = [
+      'padding: 0.85rem 1rem',
+      'border-radius: 8px',
+      'margin-top: 1rem',
+      'font-size: 0.9rem',
+      'font-weight: 600',
+      'text-align: center',
+      success
+        ? 'background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #10b981;'
+        : 'background: rgba(239, 68, 68, 0.12); border: 1px solid #ef4444; color: #ef4444;'
+    ].join(';');
+    const icon = success ? 'ri-checkbox-circle-fill' : 'ri-error-warning-fill';
+    alertBox.innerHTML = `<i class="${icon}"></i> ${msg}`;
+
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+      if (alertBox) alertBox.remove();
+      // Close modal if booking was successful
+      if (bookingModal && bookingModal.classList.contains('active') && success) {
+        bookingModal.classList.remove('active');
+      }
+    }, 5000);
+  }
+
+  /**
+   * Generic AJAX form handler — POSTs FormData to send_mail.php
+   */
+  function handleAjaxForm(formId, formType, successMsg) {
     const form = document.getElementById(formId);
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn ? submitBtn.innerHTML : 'Submit';
 
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalHtml = submitBtn ? submitBtn.innerHTML : '';
+
+      // Disable button & show loading state
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="ri-loader-4-line spin"></i> Processing...';
+        submitBtn.innerHTML = '<i class="ri-loader-4-line spin"></i> Sending...';
       }
 
-      setTimeout(() => {
+      // Build FormData and tag which form it is
+      const formData = new FormData(form);
+      formData.append('form_type', formType);
+
+      // POST to send_mail.php using the site base URL from PHP config
+      const siteBase = window.SITE_BASE_URL || window.location.origin;
+      const endpoint = siteBase.replace(/\/$/, '') + '/send_mail.php';
+
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          body: formData
+        });
+
+        // Read as text first so we can debug if JSON fails
+        const rawText = await response.text();
+        console.log('[GeekAssist] Raw response from send_mail.php:', rawText);
+
+        let data;
+        try {
+          data = JSON.parse(rawText);
+        } catch (jsonErr) {
+          console.error('[GeekAssist] JSON parse failed. Raw response was:', rawText);
+          data = { success: false, message: 'Server error — check browser console for details.' };
+        }
+
+        if (data.success) {
+          showFormAlert(form, true, successMsg);
+          form.reset();
+        } else {
+          const errMsg = data.message || 'Something went wrong. Please try again.';
+          const debugInfo = data.debug ? ' [Debug: ' + data.debug + ']' : '';
+          showFormAlert(form, false, errMsg);
+          console.warn('[GeekAssist] Mail error:', errMsg, debugInfo);
+        }
+
+      } catch (networkErr) {
+        console.error('[GeekAssist] Network/fetch error:', networkErr);
+        showFormAlert(form, false, 'Network error. Check your connection and try again.');
+      } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
+          submitBtn.innerHTML = originalHtml;
         }
-
-        // Show inline notification
-        let alertBox = form.querySelector('.form-alert');
-        if (!alertBox) {
-          alertBox = document.createElement('div');
-          alertBox.className = 'form-alert';
-          alertBox.style.cssText = 'background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #10b981; padding: 0.85rem; border-radius: 8px; margin-top: 1rem; font-size: 0.9rem; font-weight: 600; text-align: center;';
-          form.appendChild(alertBox);
-        }
-        alertBox.innerHTML = '<i class="ri-checkbox-circle-fill"></i> ' + successMsg;
-        form.reset();
-
-        setTimeout(() => {
-          if (alertBox) alertBox.remove();
-          if (bookingModal && bookingModal.classList.contains('active')) {
-            bookingModal.classList.remove('active');
-          }
-        }, 4000);
-      }, 1200);
+      }
     });
-  };
+  }
 
-  handleFormSubmit('booking-form-modal', 'Your service appointment has been requested! Our technician will call you within 15 minutes.');
-  handleFormSubmit('contact-form-page', 'Message sent successfully! Our team will respond shortly.');
-  handleFormSubmit('booking-page-form', 'Booking submitted successfully! Check your email for appointment confirmation.');
-  handleFormSubmit('newsletter-footer-form', 'Thank you for subscribing to maintenance alerts!');
+  // --- Register all 4 forms with their form_type values ---
+  handleAjaxForm(
+    'hero-quick-request-form',
+    'hero_quick',
+    '✅ Request received! A certified technician will call you within 15 minutes.'
+  );
+
+  handleAjaxForm(
+    'contact-form-page',
+    'contact_page',
+    '✅ Message sent! Our team will respond to you shortly.'
+  );
+
+  handleAjaxForm(
+    'booking-page-form',
+    'booking_page',
+    '✅ Booking confirmed! Our technician will call to confirm your appointment within 15 minutes.'
+  );
+
+  handleAjaxForm(
+    'booking-form-modal',
+    'booking_modal',
+    '✅ Session booked! Our certified technician will contact you within 15 minutes.'
+  );
 
   // 7. Interactive Area Coverage & Zip Checker
   const coverageBtn = document.getElementById('coverage-check-btn');
